@@ -1,0 +1,48 @@
+# CYBER SECURITY INTERNSHIP
+## Task 1: Scan Your Local Network for Open Ports
+
+**Name:** Your Name  
+**Task:** 1  
+**Tool Used:** Nmap 7.993  
+**Operating System:** Windows
+
+### 1. Objective
+To scan my local network, identify active devices and detect open ports using Nmap.
+
+### 2. Network Information
+- IPv4 Address: 192.168.0.100
+- Default Gateway: 192.168.0.1
+- Subnet Mask: 255.255.255.0
+- Network Range: 192.168.0.0/24
+
+### 3. Tool Used
+Nmap (Network Mapper) version 7.993.
+
+### 4. Command Executed
+`nmap -sV -T4 192.168.0.0/24 -oN "%USERPROFILE%\Desktop\nmap-results.txt"`
+
+### 5. Scan Results
+- Total IP addresses scanned: 256
+- Active devices found: 2
+- Scan duration: 21.17 seconds
+
+**Device 1: 192.168.0.1**
+- Port 80 – HTTP
+- Service: GoAhead WebServer
+
+**Device 2: 192.168.0.100**
+- Port 135 – Microsoft Windows RPC
+- Port 139 – NetBIOS-SSN
+- Port 445 – Microsoft SMB
+
+### 6. Security Observations
+- Port 80: Secure the router administration interface.
+- Port 135: Restrict unnecessary remote access.
+- Port 139: Disable NetBIOS if not required.
+- Port 445: Restrict SMB access to trusted networks.
+
+### 7. Conclusion
+I successfully installed Nmap and scanned my local network. I identified two active devices and four open TCP ports. This practical helped me understand network scanning, open ports and basic network security.
+
+### 8. Evidence
+Screenshots and Nmap scan output are included in the project folder.
